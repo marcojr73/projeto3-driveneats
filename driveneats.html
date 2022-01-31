@@ -12,6 +12,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Qahiri&family=Raleway&family=Righteous&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="confirmar">
+        <div class="confirm">
+            <h1>Confirme o seu pedido</h1>
+            <div class="grid">
+            <p class="value-dish"></p>
+            <p class="pricedish"></p>
+            <p class="value-drink"> </p>
+            <p class="pricedrink"></p>
+            <p class="value-dessert"></p>
+            <p class="pricedessert"></p>
+            <p>Total</p>
+            <p class="pay">$$$$</p>
+            </div>
+            <div class="right">Tudo certo, pode pedir</div>
+            <h1> <a href="https://imagine.gsfc.nasa.gov/hst_bday/">cancelar</a></h1>
+        </div>
+    </div>
     <div class="container">
         <header>
             <div class="name-app"><h1>DrivenEats</h1></div>
@@ -19,96 +36,97 @@
         </header>
         <main>
             <div class="first-choice"><h1>Primeiro o seu prato</h1></div>
-            <nav class="menu">
-                <div class="option">
+            <nav class="menu dishes" data-identifier="dishes">
+                <div onclick="marcarOpcao('Parmegiana', '19.90')" class="option Parmegiana" data-identifier="food-option">
                     <a href="#"><img src="./assets/parmegiana.jpg" alt=""></a>
-                    <a href="#"><h1>Frango a parmegiana</h1></a>
+                    <a href="#"><h1 data-identifier="food-title">Frango a parmegiana</h1></a>
                     <a href="#"><h2>Arroz, frango a parmegiana, salada</h2></a>
-                    <a href="#"><h3>R$ 19,90</h3></a>
+                    <a href="#"><h3 data-identifier="food-price">R$ 19,90</h3></a>
                 </div>
-                <div class="option">
+                <div onclick="marcarOpcao('Picadinho', '19.90')" class="option Picadinho" data-identifier="food-option">
                     <a href="#"><img src="./assets/picadinho.jpg" alt=""></a>
-                    <a href="#"><h1>Picadinho</h1></a>
+                    <a href="#"><h1 data-identifier="food-title">Picadinho</h1></a>
                     <a href="#"><h2>Arroz, picadinho de boi, ovo frito, farofa</h2></a>
-                    <a href="#"><h3>R$ 19,90</h3></a>
+                    <a href="#"><h3 data-identifier="food-price">R$ 19,90</h3></a>
                 </div>
-                <div class="option">
+                <div onclick = "marcarOpcao('Frango', '20.90')" class="option Frango" data-identifier="food-option">
                     <a href="#"><img src="./assets/frango-frito.jpg" alt=""></a>
-                    <a href="#"><h1>Frango frito</h1></a>
+                    <a href="#"><h1 data-identifier="food-title">Frango frito</h1></a>
                     <a href="#"><h2>Arroz, frango frito, batata frita, molho</h2></a>
-                    <a href="#"><h3>R$ 20,90</h3></a>
+                    <a href="#"><h3 data-identifier="food-price">R$ 20,90</h3></a>
                 </div>
-                <div class="option">
+                <div onclick="marcarOpcao('Peixe', '21.90')" class="option Peixe" data-identifier="food-option">
                     <a href="#"><img src="./assets/file-de-peixe.jpg" alt=""></a>
-                    <a href="#"><h1>Filé de peixe</h1></a>
+                    <a href="#"><h1 data-identifier="food-title">Filé de peixe</h1></a>
                     <a href="#"><h2>Arroz, filé de peixe, molho maracujá</h2></a>
-                    <a href="#"><h3>R$ 21,90</h3></a>
+                    <a href="#"><h3 data-identifier="food-price">R$ 21,90</h3></a>
                 </div>
             </nav>
 
             <div class="first-choice"><h1>Agora a sua bebida</h1></div>
-            <nav class="menu">
-                <div class="option">
+            <nav class="menu drinks" data-identifier="drinks">
+                <div onclick="marcarBebida('coca', '4.90')" class="option coca" data-identifier="food-option">
                     <a href="#"><img src="./assets/coca-350.jpg" alt=""></a>
-                    <a href="#"><h1>Coca cola</h1></a>
+                    <a href="#"><h1 data-identifier="food-title">Coca cola</h1></a>
                     <a href="#"><h2>Lata 350ml</h2></a>
-                    <a href="#"><h3>R$ 4,90</h3></a>
+                    <a href="#"><h3 data-identifier="food-price">R$ 4,90</h3></a>
                 </div>
-                <div class="option">
+                <div onclick="marcarBebida('schweppes', '5.40')" class="option schweppes" data-identifier="food-option">
                     <a href="#"><img src="./assets/schweppes-350.jpg" alt=""></a>
-                    <a href="#"><h1>Schweppes</h1></a>
+                    <a href="#"><h1 data-identifier="food-title">Schweppes</h1></a>
                     <a href="#"><h2>Lata 350 ml</h2></a>
-                    <a href="#"><h3>R$ 21,90</h3></a>
+                    <a href="#"><h3 data-identifier="food-price">R$ 5,40</h3></a>
                 </div>
-                <div class="option">
+                <div onclick="marcarBebida('antarctica', '4.90')" class="option antarctica" data-identifier="food-option">
                     <a href="#"><img src="./assets/guarana-350.jpg" alt=""></a>
-                    <a href="#"><h1>Guaraná Antarctica</h1></a>
+                    <a href="#"><h1 data-identifier="food-title">Guaraná Antarctica</h1></a>
                     <a href="#"><h2>Lata 350 ml</h2></a>
-                    <a href="#"><h3>R$ 4,90</h3></a>
+                    <a href="#"><h3 data-identifier="food-price">R$ 4,90</h3></a>
                 </div>
-                <div class="option">
+                <div onclick="marcarBebida('suco', '5.90')" class="option suco" data-identifier="food-option">
                     <a href="#"><img src="./assets/del-vale-290.jpg" alt=""></a>
-                    <a href="#"><h1>Del vale Pêssego</h1></a>
+                    <a href="#"><h1 data-identifier="food-title">Del vale Pêssego</h1></a>
                     <a href="#"><h2>lata 290ml</h2></a>
-                    <a href="#"><h3>R$ 5,90</h3></a>
+                    <a href="#"><h3 data-identifier="food-price">R$ 5,90</h3></a>
                 </div>
             </nav>
 
             <div class="first-choice"><h1>Por fim, sua sobremesa!</h1></div>
-            <nav class="menu">
-                <div class="option">
+            <nav class="menu dessert" data-identifier="desserts">
+                <div onclick="marcarSobremesa('pave', '5.90')" class="option pave" data-identifier="food-option">
                     <a href="#"><img src="./assets/pave-morango.png" alt=""></a>
-                    <a href="#"><h1>Pavê de morango</h1></a>
+                    <a href="#"><h1 data-identifier="food-title">Pavê de morango</h1></a>
                     <a href="#"><h2>serve 1 pessoa</h2></a>
-                    <a href="#"><h3>R$ 5,90</h3></a>
+                    <a href="#"><h3 data-identifier="food-price">R$ 5,90</h3></a>
                 </div>
-                <div class="option">
+                <div onclick="marcarSobremesa('mousse', '4.90')" class="option mousse" data-identifier="food-option">
                     <a href="#"><img src="./assets/mousse-limao.jpg" alt=""></a>
-                    <a href="#"><h1>Mousse de limão</h1></a>
+                    <a href="#"><h1 data-identifier="food-title">Mousse de limão</h1></a>
                     <a href="#"><h2>Serve uma pessoa</h2></a>
-                    <a href="#"><h3>R$ 4,90</h3></a>
+                    <a href="#"><h3 data-identifier="food-price">R$ 4,90</h3></a>
                 </div>
-                <div class="option">
+                <div onclick="marcarSobremesa('pudim', '3.90')" class="option pudim" data-identifier="food-option">
                     <a href="#"><img src="./assets/pudin.jpg" alt=""></a>
-                    <a href="#"><h1>Pudim</h1></a>
+                    <a href="#"><h1 data-identifier="food-title">Pudim</h1></a>
                     <a href="#"><h2>Serve uma pessoa</h2></a>
-                    <a href="#"><h3>R$ 3,90</h3></a>
+                    <a href="#"><h3 data-identifier="food-price">R$ 3,90</h3></a>
                 </div>
-                <div class="option">
+                <div onclick="marcarSobremesa('quindim', '3.90')" class="option quindim" data-identifier="food-option">
                     <a href="#"><img src="./assets/quindim.jpg" alt=""></a>
-                    <a href="#"><h1>quindim</h1></a>
+                    <a href="#"><h1 data-identifier="food-title">quindim</h1></a>
                     <a href="#"><h2>Serve uma pessoa</h2></a>
-                    <a href="#"><h3>R$ 3,90</h3></a>
+                    <a href="#"><h3 data-identifier="food-price">R$ 3,90</h3></a>
                 </div>
             </nav>
 
             <footer>
-                <div class="button">
+                <div onclick="pedirEndereco()" class="button confirmacao">
                 <p>Selecione os 3 ítens</p>
                 <p>Para fechar o seu pedido</p>
                 </div>
             </footer>
         </main>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>

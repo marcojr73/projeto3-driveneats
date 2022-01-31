@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../assets/background.jpeg")
+}
 .container{
     width: 414px;
     margin: auto;
@@ -48,24 +54,26 @@ main{
     width: 320px;
     height: 25px;
     margin-left: 19px;
-    padding-top: 27px;
+    padding-top: 31px;
     line-height: 32px;
     font-size: 26px;
     font-family: "Righteous";
 }
 .menu{
     position: relative;
-    margin-top: 27px;
-    height: 265px;
+    margin-top: 42px;
+    height: 260px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     overflow-x: scroll;
 }
-
+.borda{
+    border: 3px solid green;
+}
 .option{
     width: 172px;
-    height: 216px;
+    height: 210px;
     font-family: "Roboto";
     background: #FFFFFF;
     border-radius: 9px;
@@ -120,6 +128,9 @@ footer{
     bottom: 0;
     margin: auto;
 }
+.verde{
+    background: green;
+}
 .button{
     width: 364px;
     height: 61px;
@@ -133,4 +144,67 @@ footer{
     font-weight: 400;
     line-height: 23px;
     color: #FFFFFF;
+}
+.verde{
+    background: green;
+}
+.finish{
+    color: green;
+    z-index: 2;
+}
+.confirmar{
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.018em;
+    text-align: center;
+    color: #50D074;
+    background: #FFFFFF;
+    height: 52px;
+    width: 329px;
+    left: 43px;
+    top: 583px;
+    border-radius: 100px;
+}
+.confirm h1{
+    height: 27px;
+    width: 376px;
+    left: 19px;
+    top: 357px;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+}
+.confirm{
+    height: 353px;
+    width: 377px;
+    left: 19px;
+    top: 336px;
+    border-radius: 9px;
+    background: #50D074;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFFFFF;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 30px 30px 30px 30px;
 }
