@@ -92,16 +92,18 @@ function confirmarPedido(){
 
     let pay = document.querySelector(".pay");
 
+    
+    
     valueDish.innerHTML = infoDish;
-    pricedish.innerHTML = "R$ " + infoPriceDish;
+    pricedish.innerHTML = ("R$ " + parseFloat(infoPriceDish).toFixed(2).replace(".",","));;
     
     valueDrink.innerHTML = infoDrink;
-    pricedrink.innerHTML = " R$ " + infoPriceDrink;
-
-    valueDessert.innerHTML = infoDessert;
-    pricedessert.innerHTML = " R$ " + infoPriceDessert;
-
-    pay.innerHTML = " R$ " + (parseFloat(infoPriceDessert) + parseFloat(infoPriceDrink) + parseFloat(infoPriceDish)+"0");
+    pricedrink.innerHTML = (" R$ " + (parseFloat(infoPriceDrink)).toFixed(2).replace(".",","));
+    
+    valueDessert.innerHTML =  infoDessert;
+    pricedessert.innerHTML = (" R$ " + (parseFloat(infoPriceDessert)).toFixed(2).replace(".",","));
+    
+    pay.innerHTML = (" R$ " + (parseFloat(infoPriceDessert) + parseFloat(infoPriceDrink) + parseFloat(infoPriceDish)).toFixed(2).replace(".",","));
 
 }
 
@@ -109,5 +111,5 @@ function confirmarPedido(){
 
 function iniciarConversa(name, street){
     let zap = document.querySelector(".right");
-    zap.innerHTML = "<a href='https://wa.me/553284640142?text=Ol%C3%A1,%20gostaria%20de%20fazer%20o%20pedido:%20-%20Prato:%20" + infoDish + "%20Bebida:%20" + infoDrink + "%20-%20Sobremesa:%20" + infoDessert + "%20Total:%20R$%2027.70%20%20Nome:%20" + name + "%20Endere%C3%A7o:%20Rua." + street +".'>Tudo certo, pode pedir</a>";
+    zap.innerHTML = "<a href='https://wa.me/553284640142?text=Ol%C3%A1,%20gostaria%20de%20fazer%20o%20pedido:%20-%20Prato:%20" + infoDish + "%20-Bebida:%20" + infoDrink + "%20-%20Sobremesa:%20" + infoDessert + "%20Total:%20R$%2027.70%20%20Nome:%20" + name + "%20Endere%C3%A7o:%20Rua." + street +".'>Tudo certo, pode pedir</a>";
 }

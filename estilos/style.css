@@ -203,6 +203,15 @@ footer{
     align-items: center;
     color: #FFFFFF;
 }
+.right a{
+    color: #50D074;
+}
+.confirm h1{
+    color: #FFFFFF;
+}
+.confirm h1 a{
+    color: #FFFFFF;
+}
 .grid{
     display: grid;
     grid-template-columns: 150px 150px;
