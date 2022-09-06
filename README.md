@@ -7,7 +7,7 @@
 
 
 - Já teve aquela mania de sentir fome de comida q não tem em casa??
-- Agora, com o driven-eats você pode pedir sua refeição do conforto de cada
+- Agora, com o driven-eats você pode pedir sua refeição do conforto de casa
 - É só selecionar os produtos e informar o endereço que uma mensagem é automáticamente enviada para o whatsapp do restaurante com as informações
 - [Veja meu deploy na github pages aqui](https://marcojr73.github.io/projeto3-driveneats/)
 
