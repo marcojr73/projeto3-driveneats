@@ -12,6 +12,11 @@
 - [Veja meu deploy na github pages aqui](https://marcojr73.github.io/projeto3-driveneats/)
 
 ***
+# Demonstração
+
+<p align="center">
+   <img width=350 src="./assets/app.gif"/>
+</p>
 
 ## Como usar
 
